@@ -21,20 +21,57 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 /* global css */
-html {
-	line-height: 1.15; /* 1 */
-	-webkit-text-size-adjust: 100%; /* 2 */
-}
-body {
-	margin: 0;
-	padding: 0;
-}
 *:before,*:after,*{
 	margin: 0;
 	padding: 0;
 }
+body {
+	margin: 0;
+	padding: 0 0 0 0;
+	width: 100%;
+	margin: 0 auto;
+	
+}
 
 /* Start Css here for theme */
 
+/* header section */
+header{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 100px;
 
+	border-bottom: 1px solid #cde9cd;
+}
+
+.main_logo{
+	width: 18%;
+	float: left;
+
+
+}
+.custom-logo{
+	width: 100px !important;
+	height: 100px !important;
+	float: left;
+}
+
+.main_menu{
+	width: 76%;
+	float: right;
+}
+.main_menu nav div ul{
+	float: right;
+}
+.main_menu nav div ul li{
+	list-style: none;
+	float: left;
+}
+
+
+
+#primary-menu{
+
+}
 

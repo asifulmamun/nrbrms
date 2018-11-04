@@ -21,12 +21,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nrbrms' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
+<!-- header section -->
+<header>
+	<div class="main_logo">
+		<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
@@ -41,22 +40,28 @@
 			if ( $nrbrms_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $nrbrms_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
+		<?php endif; ?>
+	</div>
+	<div class="main_menu">
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nrbrms' ); ?></button>
 			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		</nav>
+	</div>
+</header>
+
+
+
+
+<br><br><br><br>
+
+<div id="page" class="site">
 
 	<div id="content" class="site-content">
-
 
 
 
