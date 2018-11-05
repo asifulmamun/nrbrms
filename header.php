@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 
 <!-- header section -->
-<header>
+<header id="header">
 	<div class="main_logo">
 		<?php
 			the_custom_logo();
@@ -57,10 +57,9 @@
 
 
 
-<br><br><br><br>
+
 
 <div id="page" class="site">
-
 	<div id="content" class="site-content">
 
 
