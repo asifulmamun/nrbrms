@@ -23,37 +23,38 @@
 <body <?php body_class(); ?>>
 
 <!-- header section -->
-<header id="header">
-	<div class="main_logo">
-		<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$nrbrms_description = get_bloginfo( 'description', 'display' );
-			if ( $nrbrms_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $nrbrms_description; /* WPCS: xss ok. */ ?></p>
-		<?php endif; ?>
-	</div>
-	<div class="main_menu">
-		<nav id="site-navigation" class="main-navigation">
+<section id="main_header">
+	<header id="header">
+		<div class="main_logo">
 			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav>
-	</div>
-</header>
-
+				the_custom_logo();
+				if ( is_front_page() && is_home() ) :
+					?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php
+				else :
+					?>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php
+				endif;
+				$nrbrms_description = get_bloginfo( 'description', 'display' );
+				if ( $nrbrms_description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $nrbrms_description; /* WPCS: xss ok. */ ?></p>
+			<?php endif; ?>
+		</div>
+		<div class="main_menu">
+			<nav id="site-navigation" class="main-navigation">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					) );
+				?>
+			</nav>
+		</div>
+	</header>
+</section>
 
 
 
