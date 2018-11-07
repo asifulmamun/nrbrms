@@ -32,5 +32,8 @@
 
 <?php wp_footer(); ?>
 
+<!-- js -->
+<?php require_once('js.php'); ?>
+
 </body>
 </html>

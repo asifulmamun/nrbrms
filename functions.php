@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'nrbrms_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nrbrms_scripts() {
-	wp_enqueue_style( 'nrbrms-style', get_stylesheet_uri() );
+	// wp_enqueue_style( 'nrbrms-style', get_stylesheet_uri() );
 
 	// wp_enqueue_script( 'nrbrms-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -167,5 +167,10 @@ if ( class_exists( 'WooCommerce' ) ) {
 }
 
 
+/*
+	* Edit from here
+	* Strat here customization
+*/
 
-
+/* Wordpress admin bar remove */
+show_admin_bar(false);

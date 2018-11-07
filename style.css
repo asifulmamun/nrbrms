@@ -21,7 +21,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 /* global css */
-*:before,*:after,*{
+*{
 	margin: 0;
 	padding: 0;
 }
@@ -38,14 +38,22 @@ body {
 #main_header{
 	width: 100%;
 	height: 100px;
+    background-color: #00000073;
+	position: absolute;
+	top: 0px;
+	z-index: 998;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 }
 #header{
 	width: 80%;
-	overflow: hidden;
 	height: 100%;
-
 	position: absolute;
-	top: 45px;
+	top: 0px;
 	z-index: 999;
 	left: 50%;
 	transform: translateX(-50%);
@@ -76,12 +84,56 @@ body {
 .main_menu nav div ul li{
 	list-style: none;
 	float: left;
+
+	position: relative;
 }
 .main_menu nav div ul li a{
 	padding: 5px 8px;
 	font-size: 20px;
 	text-decoration: none;
-	color: #23282D;
+	color: #fff;
+
+	position: relative;
 }
 
+.main_menu nav div ul li a:after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
 
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+
+    transition: 0.3s ease;
+}
+.main_menu nav div ul li:hover a:after{
+    width: 85%;
+}
+
+/* sub menu */
+.main_menu nav div ul li .sub-menu{
+}
+.main_menu nav div ul li .sub-menu {
+	position: absolute;
+	float: left;
+	top: 25px;
+	left: 0px;
+	border-left: 2px dotted #ff0009;
+	background-color: #cebdbd17;
+	font-weight: 200;
+	min-width: 200px;
+	box-shadow: 1px 2px 9px -1px #fff;
+}
+.main_menu nav div ul li .sub-menu li{
+	all: unset;
+    display: block;
+}
+.main_menu nav div ul li .sub-menu li a{
+	font-size: 14px;
+	line-height: 25px;
+}
+.main_menu nav div ul li .sub-menu li a:after{
+	all: unset;
+}
