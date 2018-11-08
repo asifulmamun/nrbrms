@@ -162,20 +162,18 @@ body {
 
 /* footer */
 #footer{
-	background: black;
+	/*background: black;*/
 }
 #colophon{
 	color: #fff;
-	min-height: 80px;
 /*	background: url('img/ftbg.png');*/
   width: 100%;
   min-height: 350px;
   background-color: #39cccc;
   background-size: cover;
-  -webkit-clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
-   clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
-   z-index: 99;
 }
+
+
 #colophon a{
 	color: #fff;
 	text-decoration: none;
