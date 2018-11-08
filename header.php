@@ -8,7 +8,6 @@
  *
  * @package NRB_Rights_Movements
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -16,12 +15,15 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<!-- @Google Fonts
+     * font-family: 'Roboto', sans-serif;
+     * font-family: 'Hind Siliguri', sans-serif;
+	 -->
+	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Roboto+Slab" rel="stylesheet">
 	<?php wp_head(); ?>
 	<!-- main css -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
 </head>
-
 <body <?php body_class(); ?>>
 
 <!-- header section -->
@@ -58,12 +60,6 @@
 	</header>
 </section>
 
-
-
-
-
+<!-- site main content -->
 <div id="page" class="site">
 	<div id="content" class="site-content">
-
-
-

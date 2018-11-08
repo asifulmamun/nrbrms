@@ -30,6 +30,9 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	overflow-x: hidden;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
 }
 
 /* Start Css here for theme */
@@ -37,7 +40,7 @@ body {
 /* header section */
 #main_header{
 	width: 100%;
-	height: 100px;
+	height: 70px;
     background-color: #00000073;
 	position: absolute;
 	top: 0px;
@@ -51,7 +54,7 @@ body {
 }
 #header{
 	width: 80%;
-	height: 100%;
+	height: 70px;
 	position: absolute;
 	top: 0px;
 	z-index: 999;
@@ -65,18 +68,28 @@ body {
 .main_logo{
 	width: 18%;
 	float: left;
+	padding-top: 15px;
 }
 .custom-logo{
 	width: 100px !important;
 	height: 100px !important;
 	float: left;
 }
+.main_logo .site-title a{
+	color: #fff ;
+	text-decoration: none;
+	font-size: 16px;
+}
+.main_logo .site-description{
+	color: #fff ;
+	font-size: 14px;
+}
 
 /* menu */
 .main_menu{
 	width: 76%;
 	float: right;
-	padding: 25px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
 }
 .main_menu nav div ul{
 	float: right;
@@ -84,18 +97,16 @@ body {
 .main_menu nav div ul li{
 	list-style: none;
 	float: left;
-
 	position: relative;
 }
 .main_menu nav div ul li a{
 	padding: 5px 8px;
-	font-size: 20px;
+	font-size: 16px;
 	text-decoration: none;
 	color: #fff;
 
 	position: relative;
 }
-
 .main_menu nav div ul li a:after{
     content: "";
     width: 0%;
@@ -113,8 +124,6 @@ body {
 }
 
 /* sub menu */
-.main_menu nav div ul li .sub-menu{
-}
 .main_menu nav div ul li .sub-menu {
 	position: absolute;
 	float: left;
@@ -136,4 +145,38 @@ body {
 }
 .main_menu nav div ul li .sub-menu li a:after{
 	all: unset;
+}
+
+/* hide and show sub menu */
+.main_menu nav div ul li ul{
+	margin-left: 2000px;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+}
+.main_menu nav div ul li:hover ul{
+	margin-left: 0px;
+}
+
+/* footer */
+#footer{
+	background: black;
+}
+#colophon{
+	color: #fff;
+	min-height: 80px;
+/*	background: url('img/ftbg.png');*/
+  width: 100%;
+  min-height: 350px;
+  background-color: #39cccc;
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+   clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+   z-index: 99;
+}
+#colophon a{
+	color: #fff;
+	text-decoration: none;
 }
