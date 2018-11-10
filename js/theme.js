@@ -22,3 +22,16 @@
 // })
 
 
+// menu icon change
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+
+//nav showing for click toggle
+$("#toggle").ready(function(){
+    $("#toggle_nav").hide();
+});
+
+$("#toggle").click(function(){
+    $("#toggle_nav").toggle(500);
+});

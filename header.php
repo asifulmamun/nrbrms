@@ -54,6 +54,22 @@
 			<?php endif; ?>
 		</div>
 		<div class="main_menu">
+			<!-- icon menu -->
+			<div id="toggle_menu">
+				<span id="toggle" class="container" onclick="myFunction(this)">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</span>
+			</div>
+			<nav id="toggle_nav" class="main-navigation">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					) );
+				?>
+			</nav>
 			<nav id="site-navigation" class="main-navigation">
 				<?php
 					wp_nav_menu( array(
