@@ -20,6 +20,13 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+/*
+--------------------------------
+--------------------------------
+---------- Theme Css -----------
+--------------------------------
+--------------------------------
+*/
 /* global css */
 *{
 	margin: 0;
@@ -34,12 +41,13 @@ body {
     font-family: 'Roboto Slab', serif;
     font-size: 14px;
 }
-
-/* Start Css here for theme */
+a:hover{
+	color: #E23E1D !important;
+}
 
 /* header section */
 #main_header{
-	width: 100%;
+	width: 101%;
 	height: 70px;
     background-color: #00000073;
 	position: absolute;
@@ -105,7 +113,6 @@ body {
 	font-size: 16px;
 	text-decoration: none;
 	color: #fff;
-
 	position: relative;
 }
 .main_menu nav div ul li a:after{
@@ -113,11 +120,9 @@ body {
     width: 0%;
     height: 2px;
     background-color: #fff;
-
     position: absolute;
     bottom: 0;
     left: 10px;
-
     transition: 0.3s ease;
 }
 .main_menu nav div ul li:hover a:after{
@@ -131,7 +136,7 @@ body {
 	top: 25px;
 	left: 0px;
 	border-left: 2px dotted #ff0009;
-	background-color: #cebdbd17;
+	background-color: #2D2D2D;
 	font-weight: 200;
 	min-width: 200px;
 	box-shadow: 1px 2px 9px -1px #fff;
@@ -167,7 +172,7 @@ body {
 #footer {
 	width: 100%;
 	background-color: #2D2D2D;
-	padding: 40px 0%;
+	padding: 60px 0px 60px 0px;
 }
 #colophon{
 	color: #fff;
@@ -179,6 +184,14 @@ body {
 	color: #fff;
 	text-decoration: none;
 }
+#colophon a:hover{
+	color: #E23E1D;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+}
 
 /* footer social menu */
 .footer_social_menu{
@@ -188,6 +201,8 @@ body {
 	font-size: 30px;
 	padding: 0px 2px;
 }
-.footer_social_menu span a:hover{
-	color: #E23E1D;
+
+/* body content */
+#content{
+
 }

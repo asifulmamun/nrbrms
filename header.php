@@ -23,8 +23,12 @@
 	 -->
 	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Roboto+Slab" rel="stylesheet">
 	<?php wp_head(); ?>
-	<!-- main css -->
+	<!-- main css all template and pages css or global css -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
+	<!-- If this is not home page this css is here -->
+	<?php if ( !is_front_page() && !is_home() ){ ?>
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/alltemplate.css">
+	<?php } ?>
 </head>
 <body <?php body_class(); ?>>
 
@@ -62,6 +66,15 @@
 	</header>
 </section>
 
+<!-- 70px gap or space work if this page is not home page for slider rev. absolute option does not gap -->
+<?php
+	if ( !is_front_page() && !is_home() ){
+		echo '<div class="hieght70px"></div>';
+	}
+?>
+
 <!-- site main content -->
 <div id="page" class="site">
 	<div id="content" class="site-content">
+
+

@@ -1,0 +1,25 @@
+/*
+*
+*	This css is form all template or page without home page or front page
+*
+*/
+
+/* global css */
+.hieght70px{
+	width: 100%;
+	height: 70px;
+}
+
+/* template css */
+#main_header{
+	background-color: #2D2D2D;
+}
+.main_menu nav div ul li a{
+	color: #fff;
+}
+.main_menu nav div ul li .sub-menu{
+	background-color: #2D2D2D;
+}
+.main_logo .site-title a,.main_logo .site-description{
+	color: #fff;
+}

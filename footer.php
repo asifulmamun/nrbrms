@@ -18,9 +18,21 @@
 				<span class="sep">&copy Non-Resident Bangladesh Rights Movement 2018</span>
 			</div><!-- .site-info -->
 			<div class="footer_social_menu">
-				<span><a href="https://facebook.com/asifulmamun"><i class="fab fa-facebook-square"></i></a></span>
-				<span><a href="https://twitter.com/asifulmamun"><i class="fab fa-twitter-square"></i></a></span>
-				<span><a href="https://www.instagram.com/asifulmamun"><i class="fab fa-instagram"></i></a></span>
+				<span>
+					<a href="https://facebook.com/asifulmamun">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+				</span>
+				<span>
+					<a href="https://twitter.com/asifulmamun">
+						<i class="fab fa-twitter-square"></i>
+					</a>
+				</span>
+				<span>
+					<a href="https://www.instagram.com/asifulmamun">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</span>
 			</div>
 		</footer><!-- #colophon -->
 	</section>
