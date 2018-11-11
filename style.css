@@ -43,6 +43,7 @@ body {
 }
 a:hover{
 	color: #E23E1D !important;
+	cursor: pointer;
 }
 
 /* header section */
@@ -159,6 +160,7 @@ a:hover{
 /* hide and show sub menu */
 .main_menu nav div ul li ul{
 	margin-left: 2000px;
+	padding-left: 0px;
 	transition: 0.3s ease;
 	-webkit-transition: 0.3s ease;
 	-moz-transition: 0.3s ease;
@@ -167,31 +169,6 @@ a:hover{
 }
 .main_menu nav div ul li:hover ul{
 	margin-left: 0px;
-}
-
-/* footer */
-#footer {
-	width: 100%;
-	background-color: #2D2D2D;
-	padding: 60px 0px 60px 0px;
-}
-#colophon{
-	color: #fff;
-	border-top: 1px solid #CC451D80;
-	margin: 0px 40px;
-	padding-top: 7px;
-}
-#colophon a{
-	color: #fff;
-	text-decoration: none;
-}
-#colophon a:hover{
-	color: #E23E1D;
-	transition: 0.3s ease;
-	-webkit-transition: 0.3s ease;
-	-moz-transition: 0.3s ease;
-	-ms-transition: 0.3s ease;
-	-o-transition: 0.3s ease;
 }
 
 /* footer social menu */
@@ -205,25 +182,30 @@ a:hover{
 
 
 /*
-------------------------
-media query
-------------------------
+----------------------------------------
+----------------------------------------
+-------------- media query for menu-----
+----------------------------------------
+----------------------------------------
  */
 @media screen and (max-width: 960px){
-
-
-#main_header,#header,.main_logo,.main_menu,.main_menu,.main_menu nav div ul,.main_menu nav div ul li,.main_menu nav div ul li a,.main_logo .site-title a,.main_logo .site-description{
+#main_header,#header,.main_logo,.main_menu,.main_menu,.main_menu nav div ul,.main_menu nav div ul li,.main_menu nav div ul li a,.main_logo .site-title a,.main_logo .site-description,.main_menu nav div ul li ul,.main_menu nav div ul li ul li,.main_menu nav div ul li ul li a,.main_menu nav div ul li .sub-menu{
 	all: inherit;
+}
+.main_menu nav div ul li .sub-menu{
+	margin-left: 10px;
+}
+.main_menu nav div ul li:hover .sub-menu{
+	margin-left: 10px;
 }
 .main_logo .site-title{
 	text-align: center;
 	color: #E23E1D;
-	padding: 10px 0px 0px 0px;
     font-size: 40px;
+    margin: 10px auto;
 }
 .main_logo .site-description{
 	text-align: center;
-	padding: 10px 0px;
 }
 
 /* icon menu */
@@ -255,3 +237,28 @@ media query
 	display: none;
 }
 }/*media
+
+/* footer */
+#footer {
+	width: 100%;
+	background-color: #2D2D2D;
+	padding: 60px 0px 60px 0px;
+}
+#colophon{
+	color: #fff;
+	border-top: 1px solid #CC451D80;
+	margin: 0px 40px;
+	padding-top: 7px;
+}
+#colophon a{
+	color: #fff;
+	text-decoration: none;
+}
+#colophon a:hover{
+	color: #E23E1D;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+}
