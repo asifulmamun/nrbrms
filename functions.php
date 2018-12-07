@@ -171,6 +171,3 @@ if ( class_exists( 'WooCommerce' ) ) {
 	* Edit from here
 	* Strat here customization
 */
-
-/* Wordpress admin bar remove */
-show_admin_bar(false);
