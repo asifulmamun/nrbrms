@@ -25,7 +25,7 @@
 	<?php wp_head(); ?>
 	<!-- main css all template and pages css or global css -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
-	<!-- If this is not home page this css is here -->
+	<!-- If this is not home page this css will include -->
 	<?php if ( !is_front_page() && !is_home() ){ ?>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/alltemplate.css">
 	<?php } ?>

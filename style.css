@@ -1,4 +1,4 @@
-!
+/*
 Theme Name: NRB Rights Movements
 Theme URI: http://underscores.me/
 Author: asifulmamun
@@ -42,7 +42,6 @@ body {
     font-size: 14px;
 }
 a:hover{
-	color: #E23E1D !important;
 	cursor: pointer;
 }
 
@@ -77,6 +76,7 @@ a:hover{
 .main_logo{
 	width: 18%;
 	float: left;
+	padding-top: 15px;
 }
 .custom-logo{
 	width: 100px !important;
@@ -101,6 +101,9 @@ a:hover{
 }
 .main_menu nav div ul{
 	float: right;
+	line-height: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 .main_menu nav div ul li{
 	list-style: none;
@@ -137,7 +140,7 @@ a:hover{
 	float: left;
 	top: 25px;
 	left: 0px;
-	border-left: 2px dotted #ff0009;
+	border-left: 2px dotted #25A9BD;
 	background-color: #2D2D2D;
 	font-weight: 200;
 	min-width: 200px;
@@ -152,7 +155,7 @@ a:hover{
 	line-height: 25px;
 }
 .main_menu nav div ul li .sub-menu li:hover a{
-	color: #E23E1D;
+	color: #25A9BD;
 }
 .main_menu nav div ul li .sub-menu li a:after{
 	all: unset;
