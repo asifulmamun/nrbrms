@@ -14,14 +14,6 @@ img{
 	height: auto;
 } /*for all images responsive*/
 
-/*menu*/
-.main_menu nav div ul li .sub-menu li:hover a {
-    color: #FFF;
-}
-.main_menu nav div ul li .sub-menu li a:hover {
-    color: #000;
-}
-
 /* template css */
 #main_header{
 	background-color: #25A9BD;
@@ -31,9 +23,45 @@ img{
 }
 .main_menu nav div ul li .sub-menu{
 	background-color: #25A9BD;
+	border-left: none;
 }
 .main_logo .site-title a,.main_logo .site-description{
 	color: #fff;
+}
+.main_menu nav div ul li .sub-menu li {
+    position: relative;
+    overflow: hidden;
+}
+.main_menu nav div ul ul li:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	background: #FCFFFF;
+	position: absolute;
+	top: -12px;
+	right: -14px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+}
+.main_menu nav div ul ul li:hover:before {
+	width: 50px;
+	height: 50px;
+}
+.main_menu nav div ul li .sub-menu li a {
+	color: #FFF;
+    text-transform: initial;
+}
+.main_menu nav div ul li .sub-menu li a:hover {
+	color: #FFF;
+    text-decoration: underline;
 }
 
 /* body content */
@@ -64,7 +92,24 @@ img{
 }
 
 
-
+#pagePHP .entry-header .entry-meta span{
+	text-transform: none;
+	font-weight: normal;
+	letter-spacing: 0px;
+}
+#pagePHP .entry-header .entry-meta span a{
+	color: #25A9BD;
+}
+#pagePHP .post-thumbnail{
+	width: 70%;
+    margin: 10px auto;
+}
+#pagePHP .post-thumbnail img{
+	border: 6px ridge #66A5B699;
+}
+#scrollTop{
+	background-color: #25A9BD;
+}
 
 /*
 ----------------------------------------
@@ -99,18 +144,28 @@ img{
     height: 5px;
     background-color: #333;
     margin: 6px 0;
-    transition: 0.4s;
+    transition: 0.4s ease;
+   	-webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
 }
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    -moz-transform: rotate(-45deg) translate(-9px, 6px);
+    -ms-transform: rotate(-45deg) translate(-9px, 6px);
+    -o-transform: rotate(-45deg) translate(-9px, 6px);
 }
 .change .bar2 {
 	opacity: 0;
 }
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    -moz-transform: rotate(45deg) translate(-8px, -8px);
+    -ms-transform: rotate(45deg) translate(-8px, -8px);
+    -o-transform: rotate(45deg) translate(-8px, -8px);
 }
 #toggle_menu{
 	visibility: visible;

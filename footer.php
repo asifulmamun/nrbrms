@@ -35,9 +35,11 @@
 				</span>
 			</div>
 		</footer><!-- #colophon -->
-	</section>
+	</section> <!-- #footer -->
 
 </div><!-- #page -->
+<!-- Scroll Top Button -->
+<button onclick="scrollTopFunction()" id="scrollTop" title="Go to top"><i class="fa fa-arrow-up"></i></button> 
 
 <?php wp_footer(); ?>
 
