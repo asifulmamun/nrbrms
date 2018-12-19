@@ -41,6 +41,14 @@
 <!-- Scroll Top Button -->
 <button onclick="scrollTopFunction()" id="scrollTop" title="Go to top"><i class="fa fa-arrow-up"></i></button> 
 
+
+<div id="window"></div>
+
+<script type="text/javascript">
+	
+
+</script>
+
 <?php wp_footer(); ?>
 
 <!-- js -->

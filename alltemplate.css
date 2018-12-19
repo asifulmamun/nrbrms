@@ -79,8 +79,8 @@ img{
 #secondary{
 	float: right;	
 }
-#pagePHP .entry-header{
-	padding: 10px 0px 10px 10px;
+#pagePHP .entry-header {
+	padding: 60px 0px 20px 10px;
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: 4px;
@@ -90,8 +90,6 @@ img{
 	margin-bottom: 50px;
 	color: #25A9BD;
 }
-
-
 #pagePHP .entry-header .entry-meta span{
 	text-transform: none;
 	font-weight: normal;
@@ -104,11 +102,12 @@ img{
 	width: 70%;
     margin: 10px auto;
 }
-#pagePHP .post-thumbnail img{
-	border: 6px ridge #66A5B699;
+#pagePHP .post-thumbnail img {
+	border: 5px ridge #66A5B699;
+	margin-top: 35px;
 }
 #scrollTop{
-	background-color: #25A9BD;
+	background-color: #25A9BDB3;
 }
 
 /*
@@ -119,64 +118,71 @@ img{
 ----------------------------------------
  */
 @media screen and (max-width: 960px){
-#main_header,#header,.main_logo,.main_menu,.main_menu,.main_menu nav div ul,.main_menu nav div ul li,.main_menu nav div ul li a,.main_logo .site-title a,.main_logo .site-description,.main_menu nav div ul li ul,.main_menu nav div ul li ul li,.main_menu nav div ul li ul li a,.main_menu nav div ul li .sub-menu{
-	all: inherit;
-}
-.main_menu nav div ul li .sub-menu{
-	margin-left: 10px;
-}
-.main_menu nav div ul li:hover .sub-menu{
-	margin-left: 10px;
-}
-.main_logo .site-title{
-	text-align: center;
-	color: #25A9BD;
-    font-size: 40px;
-    margin: 10px auto;
-}
-.main_logo .site-description{
-	text-align: center;
-}
+	.main_menu nav div ul li .sub-menu{
+		margin-left: 10px;
+	}
+	.main_menu nav div ul li:hover .sub-menu{
+		margin-left: 10px;
+	}
+	.main_logo .site-title{
+		text-align: center;
+		color: #25A9BD;
+	    font-size: 40px;
+	    margin: 10px auto;
+	}
+	.main_logo .site-description{
+		text-align: center;
+	}
 
-/* icon menu */
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s ease;
-   	-webkit-transition: 0.4s ease;
-    -moz-transition: 0.4s ease;
-    -ms-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-}
-.change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    -moz-transform: rotate(-45deg) translate(-9px, 6px);
-    -ms-transform: rotate(-45deg) translate(-9px, 6px);
-    -o-transform: rotate(-45deg) translate(-9px, 6px);
-}
-.change .bar2 {
-	opacity: 0;
-}
-.change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    -moz-transform: rotate(45deg) translate(-8px, -8px);
-    -ms-transform: rotate(45deg) translate(-8px, -8px);
-    -o-transform: rotate(45deg) translate(-8px, -8px);
-}
-#toggle_menu{
-	visibility: visible;
-	float: right;
-    margin-right: 20px;
-    cursor: pointer;
-}
-#site-navigation{
-	display: none;
-}
-.hieght70px {
-	all: inherit;
-}
+	/* icon menu */
+	.bar1, .bar2, .bar3 {
+	    width: 35px;
+	    height: 5px;
+	    background-color: #333;
+	    margin: 6px 0;
+	    transition: 0.4s ease;
+	   	-webkit-transition: 0.4s ease;
+	    -moz-transition: 0.4s ease;
+	    -ms-transition: 0.4s ease;
+	    -o-transition: 0.4s ease;
+	}
+	.change .bar1 {
+	    transform: rotate(-45deg) translate(-9px, 6px);
+	    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	    -moz-transform: rotate(-45deg) translate(-9px, 6px);
+	    -ms-transform: rotate(-45deg) translate(-9px, 6px);
+	    -o-transform: rotate(-45deg) translate(-9px, 6px);
+	}
+	.change .bar2 {
+		opacity: 0;
+	}
+	.change .bar3 {
+	    transform: rotate(45deg) translate(-8px, -8px);
+	    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+	    -moz-transform: rotate(45deg) translate(-8px, -8px);
+	    -ms-transform: rotate(45deg) translate(-8px, -8px);
+	    -o-transform: rotate(45deg) translate(-8px, -8px);
+	}
+	#toggle_menu{
+		visibility: visible;
+		float: right;
+	    margin-right: 20px;
+	    cursor: pointer;
+	}
+	#site-navigation{
+		display: none;
+	}
+	.hieght70px {
+		all: inherit;
+	}
+	#primary {
+	    width: 90%;
+	    float: none;
+	    margin: 0 auto;
+	}
+	#secondary{
+		width: 90%;
+	    float: none;
+	    margin: 0 auto;
+	}
 }/*media

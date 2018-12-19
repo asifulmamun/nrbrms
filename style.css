@@ -48,7 +48,22 @@ a{
 a:hover{
 	cursor: pointer;
 }
-
+.transition03s{
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+}
+.fixedTop0DesktopMenu{
+	position: fixed !important;
+	top: 0px;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+}
 /* header section */
 #main_header{
 	width: 101%;
@@ -257,7 +272,7 @@ a:hover{
   	font-size: 18px;
   	border: none;
   	outline: none;
-  	background-color: #090F14;
+  	background-color: #090F14B3;
   	color: white;
   	cursor: pointer;
   	padding: 15px;
@@ -347,8 +362,15 @@ a:hover{
 ----------------------------------------
  */
 @media screen and (max-width: 960px){
-	#main_header,#header,.main_logo,.main_menu,.main_menu,.main_menu nav div ul,.main_menu nav div ul li,.main_menu nav div ul li a,.main_logo .site-title a,.main_logo .site-description,.main_menu nav div ul li ul,.main_menu nav div ul li ul li,.main_menu nav div ul li ul li a,.main_menu nav div ul li .sub-menu{
+	a,button{cursor:pointer}
+	.main_menu nav div ul ul li:before,.main_menu nav div ul ul li:hover:before,.fixedTop0DesktopMenu,#main_header,#header,.main_logo,.main_menu,.main_menu,.main_menu nav div ul,.main_menu nav div ul li,.main_menu nav div ul li a,.main_logo .site-title a,.main_logo .site-description,.main_menu nav div ul li ul,.main_menu nav div ul li ul li,.main_menu nav div ul li ul li a,.main_menu nav div ul li .sub-menu{
 		all: inherit;
+	}
+	#main_header {
+	    background-color: #00000073;
+	}
+	.main_menu nav div ul ul li:before,.fixedTop0DesktopMenu{
+		all: inherit !important;
 	}
 	.main_menu nav div ul li .sub-menu{
 		margin-left: 10px;
@@ -358,7 +380,7 @@ a:hover{
 	}
 	.main_logo .site-title{
 		text-align: center;
-		color: #E23E1D;
+		color: #25A9BD;
 	    font-size: 40px;
 	    margin: 10px auto;
 	}
@@ -399,5 +421,9 @@ a:hover{
 	}
 	#site-navigation{
 		display: none;
+	}
+	.main_logo .site-description{
+		text-align: center !important;
+		background: transparent;
 	}
 }/*media
