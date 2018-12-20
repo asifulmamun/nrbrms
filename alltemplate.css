@@ -103,9 +103,11 @@ img{
     margin: 10px auto;
 }
 #pagePHP .post-thumbnail img {
+	width: 100%;
+	height: auto;
 	border: 5px ridge #66A5B699;
-	margin-top: 35px;
 }
+
 #scrollTop{
 	background-color: #25A9BDB3;
 }
@@ -118,71 +120,21 @@ img{
 ----------------------------------------
  */
 @media screen and (max-width: 960px){
-	.main_menu nav div ul li .sub-menu{
-		margin-left: 10px;
-	}
-	.main_menu nav div ul li:hover .sub-menu{
-		margin-left: 10px;
-	}
-	.main_logo .site-title{
-		text-align: center;
-		color: #25A9BD;
-	    font-size: 40px;
-	    margin: 10px auto;
-	}
-	.main_logo .site-description{
-		text-align: center;
-	}
-
-	/* icon menu */
-	.bar1, .bar2, .bar3 {
-	    width: 35px;
-	    height: 5px;
-	    background-color: #333;
-	    margin: 6px 0;
-	    transition: 0.4s ease;
-	   	-webkit-transition: 0.4s ease;
-	    -moz-transition: 0.4s ease;
-	    -ms-transition: 0.4s ease;
-	    -o-transition: 0.4s ease;
-	}
-	.change .bar1 {
-	    transform: rotate(-45deg) translate(-9px, 6px);
-	    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-	    -moz-transform: rotate(-45deg) translate(-9px, 6px);
-	    -ms-transform: rotate(-45deg) translate(-9px, 6px);
-	    -o-transform: rotate(-45deg) translate(-9px, 6px);
-	}
-	.change .bar2 {
-		opacity: 0;
-	}
-	.change .bar3 {
-	    transform: rotate(45deg) translate(-8px, -8px);
-	    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-	    -moz-transform: rotate(45deg) translate(-8px, -8px);
-	    -ms-transform: rotate(45deg) translate(-8px, -8px);
-	    -o-transform: rotate(45deg) translate(-8px, -8px);
-	}
-	#toggle_menu{
-		visibility: visible;
-		float: right;
-	    margin-right: 20px;
-	    cursor: pointer;
-	}
-	#site-navigation{
-		display: none;
-	}
-	.hieght70px {
-		all: inherit;
-	}
+	/* main body-primary and sidebar-secondary */
 	#primary {
 	    width: 90%;
 	    float: none;
 	    margin: 0 auto;
+	    line-height: 18px;
 	}
 	#secondary{
 		width: 90%;
 	    float: none;
 	    margin: 0 auto;
+   		line-height: 18px;
+	}
+	#pagePHP .entry-header {
+    font-size: 15px;
+    letter-spacing: 2px;
 	}
 }/*media

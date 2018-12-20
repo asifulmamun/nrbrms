@@ -55,6 +55,64 @@ a:hover{
 	-ms-transition: 0.3s ease;
 	-o-transition: 0.3s ease;
 }
+
+/**
+ *
+ * Pre Loader
+ *
+*/
+#pre_loader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #25A9BD80;
+	z-index: 9999;
+	cursor: not-allowed;
+}
+.load_text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.load_box {
+	width: 200px;
+	height: 200px;
+	border: 10px solid #fff;
+	margin: 50vh auto 0;
+	transform: translateY(-50%);
+	position: relative;
+	border-radius: 50%;
+}
+.load_box::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 200px;
+	height: 200px;
+	border: 10px solid transparent;
+	border-top: 10px solid #25A9BD;
+	border-radius: 50%;
+	transform: rotate(45deg);
+	animation: wheel 1.5s ease-in infinite;
+}
+
+@keyframes wheel{
+	from{
+		transform: rotate(45deg);
+	}
+	to{
+		transform: rotate(405deg);
+	}
+}
+
+
+
+
+/* fixed button for go to top section */
 .fixedTop0DesktopMenu{
 	position: fixed !important;
 	top: 0px;
@@ -128,6 +186,8 @@ a:hover{
 	list-style: none;
 	float: left;
 	position: relative;
+	height: 50px;
+	background: transparent;
 }
 .main_menu nav div ul li a{
 	padding: 5px 8px;
@@ -195,6 +255,7 @@ a:hover{
 }
 .main_menu nav div ul li:hover ul{
 	margin-left: 0px;
+	margin-top: 22px;
 }
 .main_menu nav div ul li .sub-menu li {
     position: relative;
@@ -286,6 +347,9 @@ a:hover{
 #scrollTop:hover {
   background-color: #42D5EC;
 }
+#scrollTop:focus {
+  background-color: #42D5EC;
+}
 /*
 ----------------------------------------
 ----------------------------------------
@@ -321,10 +385,13 @@ a:hover{
 	-moz-transition: 0.3s ease;
 	-ms-transition: 0.3s ease;
 	-o-transition: 0.3s ease;
+	cursor: pointer;
 }
 #nrb_sidebar .search-form input[type="submit"]:hover {
 	background-color: #42D5EC;
-	cursor: pointer;
+}
+#nrb_sidebar .search-form input[type="submit"]:focus {
+	background-color: #000;
 }
 #nrb_sidebar #secondary {
 	margin-top: 100px;
@@ -363,14 +430,14 @@ a:hover{
  */
 @media screen and (max-width: 960px){
 	a,button{cursor:pointer}
-	.main_menu nav div ul ul li:before,.main_menu nav div ul ul li:hover:before,.fixedTop0DesktopMenu,#main_header,#header,.main_logo,.main_menu,.main_menu,.main_menu nav div ul,.main_menu nav div ul li,.main_menu nav div ul li a,.main_logo .site-title a,.main_logo .site-description,.main_menu nav div ul li ul,.main_menu nav div ul li ul li,.main_menu nav div ul li ul li a,.main_menu nav div ul li .sub-menu{
+	.main_menu nav div ul li:hover,.main_menu nav div ul li a::after,.main_menu nav div ul li .sub-menu li a:after,a,a:hover,.hieght70px,.main_menu nav div ul ul li:before,.main_menu nav div ul ul li:hover:before,.fixedTop0DesktopMenu,.main_logo,.main_menu,.main_menu,.main_menu nav div ul,.main_menu nav div ul li,.main_menu nav div ul li a,.main_logo .site-title a,.main_logo .site-description,.main_menu nav div ul li ul,.main_menu nav div ul li ul li,.main_menu nav div ul li ul li a,.main_menu nav div ul li .sub-menu{
+		all: inherit !important;
+	}
+	#main_header,#header{
 		all: inherit;
 	}
 	#main_header {
-	    background-color: #00000073;
-	}
-	.main_menu nav div ul ul li:before,.fixedTop0DesktopMenu{
-		all: inherit !important;
+	background-color: #25A9BD !important;
 	}
 	.main_menu nav div ul li .sub-menu{
 		margin-left: 10px;
@@ -380,14 +447,13 @@ a:hover{
 	}
 	.main_logo .site-title{
 		text-align: center;
-		color: #25A9BD;
+		color: #000;
 	    font-size: 40px;
 	    margin: 10px auto;
 	}
 	.main_logo .site-description{
 		text-align: center;
 	}
-
 	/* icon menu */
 	.bar1, .bar2, .bar3 {
 	    width: 35px;
@@ -426,4 +492,40 @@ a:hover{
 		text-align: center !important;
 		background: transparent;
 	}
+	.main_menu nav div ul li .sub-menu{
+		padding-left: 5px !important;
+	}
+	.main_menu nav div ul li .sub-menu li ul{
+		padding-left: 5px !important;
+	}
+}/*media*/
+
+/*
+----------------------------------------
+media query I pod pro Landscap 
+----------------------------------------
+ */
+@media screen and (max-width: 1112px){
+	#pagePHP p{
+		line-height: 25px !important;
+	}
+	#header {
+	    width: 95%;
+	    padding: 8px 0;
+	}
+	.main_logo {
+		width: 22%;
+		padding-top: 5px;
+	}
+	.main_menu {
+		width: 70%;
+		padding: 7px 0px 0px 0px;
+	}
+	.main_menu nav div ul li a {
+	    padding: 5px 5px;
+	    font-size: 13px;
+	}
+	#pagePHP .entry-header {
+    	font-size: 14px;
+    }
 }/*media

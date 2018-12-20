@@ -32,6 +32,11 @@
 </head>
 <body <?php body_class(); ?>>
 
+<!-- pre-loader -->
+<section id="pre_loader">
+	<div class="load_box"><h1 class="load_text">Loading....</h1></div>
+</section>
+
 <!-- header section -->
 <section id="main_header">
 	<header id="header">
