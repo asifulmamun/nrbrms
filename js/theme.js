@@ -1,7 +1,7 @@
 // pre-loader
-// $(window).on('load', function(){
-//   $('#pre_loader').fadeOut();
-// });
+$(window).on('load', function(){
+  $('#pre_loader').fadeOut();
+});
 
 // menu icon change
 function myFunction(x) {
