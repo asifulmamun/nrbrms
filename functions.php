@@ -175,3 +175,10 @@ if ( class_exists( 'WooCommerce' ) ) {
 	
 /* Wordpress admin bar remove */
 show_admin_bar( false );
+// Comment Ajax Enable
+function NRB_Rights_Movements_Ajax() {
+if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'NRB_Rights_Movements_Ajax' );

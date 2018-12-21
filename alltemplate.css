@@ -108,8 +108,71 @@ img{
 	border: 5px ridge #66A5B699;
 }
 
-#scrollTop{
+#scrollTop {
 	background-color: #25A9BDB3;
+	overflow: hidden;
+	width: 45px;
+	height: 50px;
+	animation: text_shadow 1.5s ease-in-out infinite;
+	-webkit-animation: text_shadow 1.5s ease-in-out infinite;
+	-moz-animation: text_shadow 1.5s ease-in-out infinite;
+	-ms-animation: text_shadow 1.5s ease-in-out infinite;
+	-o-animation: text_shadow 1.5s ease-in-out infinite;
+}
+@-webkit-keyframes text_shadow{
+	0%{
+		text-shadow: inherit;
+	}
+	50%{
+		text-shadow: 1px 1px 6px #000;
+	}
+	100%{
+		text-shadow: inherit;
+	}
+}
+@-moz-keyframes text_shadow{
+	0%{
+		text-shadow: inherit;
+	}
+	50%{
+		text-shadow: 1px 1px 6px #000;
+	}
+	100%{
+		text-shadow: inherit;
+	}
+}
+@-ms-keyframes text_shadow{
+	0%{
+		text-shadow: inherit;
+	}
+	50%{
+		text-shadow: 1px 1px 6px #000;
+	}
+	100%{
+		text-shadow: inherit;
+	}
+}
+@-o-keyframes text_shadow{
+	0%{
+		text-shadow: inherit;
+	}
+	50%{
+		text-shadow: 1px 1px 6px #000;
+	}
+	100%{
+		text-shadow: inherit;
+	}
+}
+@keyframes text_shadow{
+	0%{
+		text-shadow: inherit;
+	}
+	50%{
+		text-shadow: 1px 1px 6px #000;
+	}
+	100%{
+		text-shadow: inherit;
+	}
 }
 
 /*

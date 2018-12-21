@@ -569,6 +569,129 @@ a:hover{
 /*
 ----------------------------------------
 ----------------------------------------
+------ Comments Template
+----------------------------------------
+----------------------------------------
+ */
+#post_comments {
+	margin-top: 50px;
+	border-top: 0.0011em solid #25A9BD4D;
+	padding: 15px 20px 15px 20px;
+}
+#post_comments > .comments-area > .comments-title {
+	font-size: 18px;
+	color: #25A9BD;
+	font-weight: normal;
+	letter-spacing: 3px;
+	padding: 15px 0px;
+	position: relative;
+	margin-bottom: 25px;
+}
+#post_comments > .comments-area > .comments-title:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	background-color: #25A9BD;
+	animation: widthinout 3.5s ease-in-out infinite;
+	-webkit-animation: widthinout 3.5s ease-in-out infinite;
+	-moz-animation: widthinout 3.5s ease-in-out infinite;
+	-ms-animation: widthinout 3.5s ease-in-out infinite;
+	-o-animation: widthinout 3.5s ease-in-out infinite;
+}
+@-webkit-keyframes widthinout{
+	0%{
+		width: 0%;
+	}
+	50%{
+		width: 100%;
+	}
+	100%{
+		width: 0%;
+	}
+}
+@-moz-keyframes widthinout{
+	0%{
+		width: 0%;
+	}
+	50%{
+		width: 100%;
+	}
+	100%{
+		width: 0%;
+	}
+}
+@-ms-keyframes widthinout{
+	0%{
+		width: 0%;
+	}
+	50%{
+		width: 100%;
+	}
+	100%{
+		width: 0%;
+	}
+}
+@-o-keyframes widthinout{
+	0%{
+		width: 0%;
+	}
+	50%{
+		width: 100%;
+	}
+	100%{
+		width: 0%;
+	}
+}
+@keyframes widthinout{
+	0%{
+		width: 0%;
+	}
+	50%{
+		width: 100%;
+	}
+	100%{
+		width: 0%;
+	}
+}
+#post_comments .comment-list .comment {
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+}
+#post_comments .comment-list .comment .children {
+	padding-left: 5%;
+}
+#post_comments .comment-author .avatar {
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+
+
+
+
+
+
+
+#post_comments .comment-list>.comment>.comment-body{
+	display: block;
+	overflow: hidden;
+	border: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+/*
+----------------------------------------
+----------------------------------------
 -------------- media query for menu-----
 ----------------------------------------
 ----------------------------------------
