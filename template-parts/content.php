@@ -21,11 +21,12 @@
 			if ( 'post' === get_post_type() ) :
 				?>
 				<div class="entry-meta">
+					
 					<?php
 					nrbrms_posted_on();
 					nrbrms_posted_by();
 					?>
-				</div><!-- .entry-meta -->
+				</div><!-- .entry-meta --><span class="typer">
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 
