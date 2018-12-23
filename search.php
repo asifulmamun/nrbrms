@@ -50,6 +50,8 @@ get_header();
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php
-get_sidebar();
-get_footer();
+<div id="nrb_sidebar">
+	<?php get_sidebar(); ?>
+</div>
+
+<?php get_footer(); ?>
