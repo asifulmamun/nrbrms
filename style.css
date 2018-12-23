@@ -673,8 +673,8 @@ a:hover{
 }
 #post_comments .comment-author .avatar {
 	float: left;
-	width: 150px;
-	height: 150px;
+	width: 80px;
+	height: 80px;
 	margin-right: 25px;
 }
 #post_comments .comment-list > .comment > .comment-body {
