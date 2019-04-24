@@ -37,7 +37,6 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	overflow-x: hidden;
-    font-family: 'Hind Siliguri', sans-serif;
     font-family: 'Roboto Slab', serif;
     font-size: 14px;
     position: relative;
@@ -502,6 +501,13 @@ a:hover{
 	color: #25A9BD;
 }
 
+/*Address*/
+address{
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	padding: 0 0px 25px 40px;
+}
 
 /*
 ----------------------------------------
