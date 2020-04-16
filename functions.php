@@ -166,6 +166,19 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 
+/* 
+	Custom Footer Menu
+*/
+function footer_menu() {
+	register_nav_menus(
+	  array(
+		'footer_menu' => __( 'Footer Menu' ),
+	  )
+	);
+  }
+add_action( 'init', 'footer_menu' );
+
+
 
 /*
 	* Edit from here

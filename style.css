@@ -509,6 +509,39 @@ address{
 	padding: 0 0px 25px 40px;
 }
 
+/* 
+	Footer Menu
+*/
+#footer .footer_menu>ul>li>a{
+	color: #42D5EC;
+	font-size: 12px;
+}
+#footer .footer_menu>ul{
+	padding: 10px 40px;
+}
+#footer .footer_menu>ul>li{
+	display: inline;
+	padding-right: 10px;
+	position: relative;
+}
+#footer .footer_menu>ul>li::before{
+	content: "";
+	position: absolute;
+	left: -5px;
+	top: 0px;
+	width: 2px;
+	height: 80%;
+	background-color: #42D5EC;
+}
+#footer .footer_menu>ul:hover>li::before{
+	background-color: #fff;
+}
+#footer .footer_menu>ul>li:hover>a{
+	color: #fff;
+}
+
+
+
 /*
 ----------------------------------------
 ----------------------------------------

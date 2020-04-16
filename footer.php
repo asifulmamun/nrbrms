@@ -14,6 +14,11 @@
 
 	<section id="footer">
 		<address><u><b>Mailing Address:</b><br></u> 6 Duckett Street<br>London E1 4LU<br>United Kingdom<br>+447578088999</address>
+		<?php
+			wp_nav_menu( array( 
+				'theme_location' => 'footer_menu', 
+				'container_class' => 'footer_menu' ) ); 
+		?>
 		<footer id="colophon" class="site-footer">
 			<div class="site-info">
 				<span class="sep">&copy Non-Resident Bangladesh Rights Movement 2018</span>
