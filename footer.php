@@ -13,36 +13,28 @@
 	</div><!-- #content -->
 
 	<section id="footer">
-		<address><u><b>Mailing Address:</b><br></u> 6 Duckett Street<br>London E1 4LU<br>United Kingdom<br>+447578088999</address>
+		
+		<!-- footer widget -->
+		<?php dynamic_sidebar( 'footer_1' ); ?>
+		
+		<!-- footer nav -->
 		<?php
 			wp_nav_menu( array( 
 				'theme_location' => 'footer_menu', 
 				'container_class' => 'footer_menu' ) ); 
 		?>
+
 		<footer id="colophon" class="site-footer">
 			<div class="site-info">
-				<span class="sep">&copy Non-Resident Bangladesh Rights Movement 2018</span>
+				<!-- footer bottom left -->
+				<?php dynamic_sidebar( 'footer_bottom_left' ); ?>
 			</div><!-- .site-info -->
 			<div class="footer_social_menu">
-				<span>
-					<a href="https://facebook.com/nrbrightsmovement">
-						<i class="fab fa-facebook-square"></i>
-					</a>
-				</span>
-				<span>
-					<a href="https://twitter.com/asifulmamun">
-						<i class="fab fa-twitter-square"></i>
-					</a>
-				</span>
-				<span>
-					<a href="https://www.instagram.com/asifulmamun">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</span>
+				<!-- footer bottom right -->
+				<?php dynamic_sidebar( 'footer_bottom_right' ); ?>
 			</div>
-			<i><a style="font-size:10px;color:#0006;font-weight:normal;" title="To know Developer of site click here..!" href="https://facebook.com/asifulmamun">Developer @asifulmamun</a></i>
 		</footer><!-- #colophon -->
-
+		<i><a style="font-size:10px;color:#0006;font-weight:normal;" title="To know Developer of site click here..!" href="https://facebook.com/asifulmamun">Developer @asifulmamun</a></i>
 	</section> <!-- #footer -->
 	
 </div><!-- #page -->

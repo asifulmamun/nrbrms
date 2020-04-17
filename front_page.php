@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Front Page Template
+	Template Name: Front Page Template
 	This is front page template without breadcrumbs.
 */
 
